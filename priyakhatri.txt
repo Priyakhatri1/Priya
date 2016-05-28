@@ -1,0 +1,138 @@
+
+		package o;
+
+		public class ShippingBox {
+
+			public static void main(String[] args) {
+				
+		    
+			Shipping s = new Shipping();
+			s.sender_name = "\t***Priya***";
+			s.receiver_name =  "\t***Poonam***";
+			s.cost_per_pound = 3;
+			s.weight = 54;
+			System.out.println("__________");
+			System.out.println("Shipping");
+			System.out.println("sender name"+s.sender_name);
+			System.out.println("receiver name"+s.receiver_name);
+			System.out.println("unit cost"+s.cost_per_pound);
+			System.out.println("weight"+s.weight);
+			
+			System.out.println("__________");
+			
+			Shipping s1 = new Shipping();
+			s1.sender_name= "\t***Chander***";
+			s1.receiver_name= "\t***Khatri***";
+			s1.cost_per_pound= 5;
+			s1.weight=55;
+			System.out.println("__________");
+			System.out.println("Shipping 1");
+			System.out.println("sender name"+s1.sender_name);
+			System.out.println("receiver name"+s1.receiver_name);
+			System.out.println("unit cost"+s1.cost_per_pound);
+			System.out.println("weight"+s1.weight);
+			
+			System.out.println("___________");
+			
+			
+			Person p =new Person();
+			p.name="\t***Ayanish***";
+			p.age= 8;
+			p.height= 3;
+			System.out.println("_________");
+			System.out.println("Name"+p.name);
+			System.out.println("Age"+p.age);
+			System.out.println("Height"+p.height);
+			System.out.println("__________");
+			
+			
+			Person p2 =new Person();
+			p2.name="\t***chander***";
+			p2.age= 9;
+			p2.height= 4;
+			System.out.println("_________");
+			System.out.println("Name"+p2.name);
+			System.out.println("Age"+p2.age);
+			System.out.println("Height"+p2.height);
+			System.out.println("__________");
+			
+		 
+			
+			Car c= new Car();
+			c.name="GLI";
+			c.color="grey";
+			c.model=123245;
+			c.cylinder=34;
+			System.out.println("__________");
+			System.out.println("Name"+c.name);
+			System.out.println("Color"+c.color);
+			System.out.println("Model"+c.model);
+			System.out.println("Cylinder"+c.cylinder);
+			System.out.println("_________");
+			
+			Car c1= new Car();
+			c1.name="XLI";
+			c1.color=" black";
+			c1.model=23245;
+			c1.cylinder=45;
+			System.out.println("__________");
+			System.out.println("Name"+c1.name);
+			System.out.println("Color"+c1.color);
+			System.out.println("Model"+c1.model);
+			System.out.println("Cylinder"+c1.cylinder);
+			System.out.println("_________");
+			
+			
+			}
+
+		
+
+
+	}
+
+
+package o;
+
+public class Shipping {
+ public String sender_name;
+   public String receiver_name;
+   public int cost_per_pound;
+   public int weight;
+   
+public  int shipping_cost(){
+	return cost_per_pound*weight;
+}
+}
+package o;
+
+public class Car {
+  public String name;
+  public String color;
+  public int model;
+  public int cylinder;
+  
+  public void start(){}
+  public void speed(){}
+  public void acceleration(){}
+  public void stop(){}
+}
+ 
+	 
+ package o;
+
+public class Person {
+   public  String name;
+   public int age;
+   public int height;
+   
+   
+    public void speak(){}
+    public void eat(){}
+    public void smell(){}
+    public void drink(){}
+    
+   
+}
+
+
+
